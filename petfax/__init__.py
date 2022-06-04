@@ -13,3 +13,6 @@ def create_app():
     from . import fact
     app.register_blueprint(fact.bp)
     return app
+
+    app.config['SQLALCHENY_DATABASE_URL'] = 'postgres://postgress:Rookie121215@localhost:5432/petfax'
+    app.config['SQLALCHENY_TRACK_MODIFICATIONS'] = False
