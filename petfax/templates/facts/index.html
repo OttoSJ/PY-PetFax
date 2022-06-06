@@ -8,6 +8,9 @@
 </head>
 <body>
     <h1>User Facts</h1>
-    
+    {% for fact in facts %}
+        <h4>Submitted by {{fact.submitter}}</h4>
+        {{ fact.fact }}
+        {% endfor %}
 </body>
 </html>
